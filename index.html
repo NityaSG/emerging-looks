@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="A sample look report: how the kurti is being restyled in an Indian women's Instagram Reels feed, with the evidence, the limits and the method.">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="The Kurti, Restyled">
+<meta property="og:description" content="A sample look report: how the kurti is being restyled in an Indian women's Instagram Reels feed, with the evidence, the limits and the method.">
+<meta property="og:type" content="article">
+<title>The Kurti, Restyled</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: white page, centred headlines, full-width bands alternating white and pale grey, content in soft rounded tiles. */
+:root {
+  --bg: #FFFFFF; --band: #F5F5F7; --tile-on-bg: #F5F5F7; --tile-on-band: #FFFFFF;
+  --text: #1D1D1F; --secondary: #6E6E73; --tertiary: #86868B; --line: #D2D2D7; --track: #E8E8ED;
+  --link: #0066CC; --inverse-bg: #1D1D1F; --inverse-text: #F5F5F7; --inverse-secondary: #A1A1A6; --inverse-soft: #3A3A3C;
+  --sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Inter", "Helvetica Neue", Arial, sans-serif;
+}
+/* One look by choice: the page stays white in every viewer theme. */
+
+body { background: var(--bg); color: var(--text); font-family: var(--sans); font-size: 1.0625rem; line-height: 1.5;
+  -webkit-font-smoothing: antialiased; }
+.inner { max-width: 61.25rem; margin: 0 auto;
+  padding-left: max(22px, env(safe-area-inset-left, 0px)); padding-right: max(22px, env(safe-area-inset-right, 0px)); }
+h1, h2, h3 { margin: 0; font-weight: 600; text-wrap: balance; }
+h1 { font-size: clamp(2.6rem, 7.2vw, 5rem); line-height: 1.05; letter-spacing: -0.035em; }
+h2 { font-size: clamp(2rem, 4.6vw, 3rem); line-height: 1.08; letter-spacing: -0.03em; }
+h3 { font-size: 1.3rem; line-height: 1.2; letter-spacing: -0.015em; }
+p { margin: 0; }
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; border-radius: 4px; }
+.num { font-variant-numeric: tabular-nums; }
+
+.nav { border-bottom: 1px solid var(--line); }
+.nav .inner { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 0.25rem 1.5rem; padding-block: 0.85rem; }
+.nav b { font-weight: 600; font-size: 1.0625rem; letter-spacing: -0.01em; }
+.nav span { font-size: 0.8rem; color: var(--secondary); }
+
+.band { padding-block: 5.5rem; }
+.band.grey { background: var(--band); }
+.head { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 1rem; margin-bottom: 3rem; }
+.head p { color: var(--secondary); font-size: 1.25rem; line-height: 1.4; max-width: 38rem; letter-spacing: -0.01em; }
+.eyebrow { font-size: 1.0625rem; font-weight: 600; color: var(--secondary); letter-spacing: -0.01em; }
+
+.hero { padding-block: 5.5rem 4.5rem; }
+.hero .inner { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 1.5rem; }
+.hero .sub { font-size: clamp(1.2rem, 2.4vw, 1.5rem); line-height: 1.35; color: var(--secondary); max-width: 41rem; letter-spacing: -0.015em; }
+.stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.5rem; width: 100%; margin-top: 2.5rem; padding-top: 2.5rem; border-top: 1px solid var(--line); }
+.stats div { display: flex; flex-direction: column; gap: 0.35rem; align-items: center; }
+.stats b { font-size: clamp(2.4rem, 5.5vw, 3.5rem); font-weight: 600; letter-spacing: -0.035em; line-height: 1; font-variant-numeric: tabular-nums; }
+.stats span { font-size: 0.9rem; color: var(--secondary); line-height: 1.35; max-width: 11rem; }
+
+.tile { border-radius: 1.75rem; padding: 2.25rem; display: flex; flex-direction: column; gap: 0.7rem; min-width: 0; }
+.band.grey .tile { background: var(--tile-on-band); }
+.band:not(.grey) .tile { background: var(--tile-on-bg); }
+.tile .meta { font-size: 0.875rem; color: var(--secondary); }
+.tile p { color: var(--secondary); }
+.tile p strong { color: var(--text); font-weight: 600; }
+
+.names { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
+.names .lead { grid-column: 1 / -1; padding: 3rem; gap: 0.9rem; }
+.names .lead h3 { font-size: clamp(1.7rem, 3.4vw, 2.4rem); letter-spacing: -0.03em; line-height: 1.1; }
+.names .lead p { font-size: 1.2rem; line-height: 1.4; max-width: 40rem; }
+
+.anatomy { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+.rows { display: grid; gap: 0.85rem; margin-top: 0.6rem; }
+.row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 0.3rem 1rem; font-size: 0.95rem; }
+.row span:nth-child(2) { color: var(--secondary); font-variant-numeric: tabular-nums; }
+.row .track { grid-column: 1 / -1; height: 6px; border-radius: 3px; background: var(--track); overflow: hidden; }
+.row .fill { display: block; height: 100%; border-radius: 3px; background: var(--text); }
+.dots { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.4rem 0.75rem; margin-top: 0.9rem; }
+.dot { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; font-size: 0.85rem; text-align: center; line-height: 1.25; }
+.dot i { width: 2.6rem; height: 2.6rem; border-radius: 50%; box-shadow: inset 0 0 0 1px var(--line); }
+.dot em { font-style: normal; color: var(--secondary); font-variant-numeric: tabular-nums; }
+.small { font-size: 0.875rem; color: var(--tertiary); }
+
+.days { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 0.5rem; align-items: end; margin-top: 1.5rem; --u: 0.2rem; }
+.day { display: flex; flex-direction: column; align-items: center; gap: 0.45rem; min-width: 0; }
+.day .pct { font-weight: 600; font-size: 1.05rem; letter-spacing: -0.01em; font-variant-numeric: tabular-nums; }
+.day .bar { display: block; width: min(3rem, 70%); height: calc(var(--p) * var(--u)); border-radius: 0.6rem 0.6rem 0.2rem 0.2rem; background: var(--text); }
+.day .d { font-size: 0.9rem; font-weight: 500; margin-top: 0.2rem; white-space: nowrap; }
+.day .n { font-size: 0.78rem; color: var(--secondary); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.days.months { grid-template-columns: repeat(13, minmax(0, 1fr)); gap: 0.35rem; --u: 0.5rem; }
+.months .day .bar { width: min(2.4rem, 78%); }
+.months .day .n { color: var(--tertiary); }
+.days.months.ten { grid-template-columns: repeat(10, minmax(0, 1fr)); }
+.subhead { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 0.6rem; margin: 4rem 0 2rem; }
+.subhead h3 { font-size: clamp(1.5rem, 3vw, 2rem); letter-spacing: -0.025em; line-height: 1.12; }
+.subhead p { color: var(--secondary); font-size: 1.1rem; max-width: 36rem; }
+.day .bar { min-height: 2px; }
+.press { text-align: center; color: var(--secondary); font-size: 0.95rem; max-width: 44rem; margin: 2.25rem auto 0; }
+.facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; margin-top: 1.25rem; }
+.facts .tile { gap: 0.5rem; padding: 2rem; }
+.facts b { font-size: 2.4rem; font-weight: 600; letter-spacing: -0.03em; line-height: 1; font-variant-numeric: tabular-nums; }
+.facts p { font-size: 0.95rem; }
+
+.examples { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
+.examples .tile { padding: 1.9rem; gap: 0.6rem; }
+.examples h3 { font-size: 1.25rem; overflow-wrap: anywhere; }
+.examples p { font-size: 0.95rem; }
+.examples a { margin-top: auto; padding-top: 0.6rem; font-size: 0.95rem; overflow-wrap: anywhere; }
+
+.reels { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
+.reel { display: flex; flex-direction: column; justify-content: space-between; gap: 1rem; aspect-ratio: 4 / 5; max-width: 100%; min-width: 0;
+  background: var(--inverse-bg); color: var(--inverse-text); border-radius: 1.75rem; padding: 1.6rem; text-decoration: none; transition: transform 0.25s ease; }
+.reel:hover { transform: scale(1.015); text-decoration: none; }
+.reel:focus-visible { outline: 3px solid var(--link); outline-offset: 3px; border-radius: 1.75rem; }
+.reel .top { display: flex; justify-content: space-between; gap: 0.5rem; font-size: 0.8rem; color: var(--inverse-secondary); }
+.reel .mid { display: flex; flex-direction: column; gap: 0.45rem; min-width: 0; }
+.reel .big { font-size: clamp(1.9rem, 3.3vw, 2.5rem); font-weight: 600; letter-spacing: -0.035em; line-height: 1; font-variant-numeric: tabular-nums; }
+.reel .ttl { font-size: 1.15rem; font-weight: 600; letter-spacing: -0.015em; line-height: 1.2; margin-top: 0.35rem; overflow-wrap: anywhere; }
+.reel .note { font-size: 0.9rem; color: var(--inverse-secondary); line-height: 1.4; }
+.reel .bottom { display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; font-size: 0.85rem; min-width: 0; }
+.reel .who { overflow-wrap: anywhere; min-width: 0; }
+.reel .play { flex: 0 0 auto; width: 2.2rem; height: 2.2rem; border-radius: 50%; background: var(--inverse-soft); display: grid; place-items: center; }
+.reel .play path { fill: var(--inverse-text); }
+
+.explore { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); grid-template-areas: "map panel" "chips chips"; gap: 1.25rem; }
+.mapwrap { grid-area: map; padding: 1.25rem; }
+#lookmap { display: block; width: 100%; height: auto; aspect-ratio: 1 / 1; max-width: 100%; }
+#lookmap circle { fill: var(--line); }
+#lookmap circle.in { fill: var(--tertiary); cursor: pointer; }
+#lookmap circle.on { fill: var(--link); cursor: pointer; }
+.panel { grid-area: panel; gap: 1.1rem; }
+.panel h3 { font-size: 1.6rem; letter-spacing: -0.025em; line-height: 1.12; }
+.panel .lbl { font-size: 0.8rem; font-weight: 600; color: var(--tertiary); margin-bottom: 0.45rem; }
+.panel .pills { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.panel .pills span { background: var(--band); border-radius: 999px; padding: 0.25rem 0.7rem; font-size: 0.85rem; }
+.panel .sw { display: flex; flex-wrap: wrap; gap: 0.5rem 0.9rem; }
+.panel .sw span { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.85rem; color: var(--secondary); }
+.panel .sw i { width: 1.1rem; height: 1.1rem; border-radius: 50%; box-shadow: inset 0 0 0 1px var(--line); }
+.panel .strip { display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 0.3rem; align-items: end; }
+.panel .strip div { display: flex; flex-direction: column; align-items: center; gap: 0.25rem; font-size: 0.68rem; color: var(--secondary); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.panel .strip b { display: block; width: 70%; border-radius: 3px; background: var(--text); min-height: 2px; }
+.panel .strip b.zero { background: var(--track); }
+.panel .flag { align-self: flex-start; font-size: 0.8rem; font-weight: 600; color: var(--link); }
+.chips { grid-area: chips; display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; }
+.chip { font: inherit; font-size: 0.85rem; line-height: 1.2; border: 1px solid var(--line); background: var(--bg); color: var(--text); border-radius: 999px; padding: 0.45rem 0.85rem; cursor: pointer; flex: 0 0 auto; }
+.chip span { color: var(--secondary); font-variant-numeric: tabular-nums; }
+.chip[aria-pressed="true"] { background: var(--text); color: var(--bg); border-color: var(--text); }
+.chip[aria-pressed="true"] span { color: var(--bg); }
+.chip:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { .reel { transition: none; } .reel:hover { transform: none; } }
+.pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+.pair .tile { padding: 2.5rem; gap: 1.3rem; }
+.pair h3 { font-size: 1.6rem; letter-spacing: -0.025em; }
+.pair ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.1rem; }
+.pair li { color: var(--secondary); font-size: 1rem; }
+.pair li strong { color: var(--text); font-weight: 600; display: block; }
+
+.steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2rem; }
+.step { display: flex; flex-direction: column; gap: 0.6rem; min-width: 0; text-align: center; align-items: center; }
+.step i { font-style: normal; font-size: 3.2rem; font-weight: 600; letter-spacing: -0.04em; line-height: 1; color: var(--tertiary); }
+.step p { color: var(--secondary); font-size: 1rem; max-width: 18rem; }
+
+.close { background: var(--inverse-bg); color: var(--inverse-text); border-radius: 1.75rem; padding: 4.5rem 2.5rem;
+  display: flex; flex-direction: column; align-items: center; text-align: center; gap: 1.2rem; }
+.close p { color: var(--inverse-secondary); font-size: 1.2rem; line-height: 1.4; max-width: 36rem; }
+.close .ask { color: var(--inverse-text); font-weight: 600; font-size: 1.25rem; margin-top: 0.6rem; }
+.foot { padding-block: 1.6rem 3rem; }
+.foot p { font-size: 0.78rem; color: var(--tertiary); border-top: 1px solid var(--line); padding-top: 1.1rem; }
+
+@media (max-width: 780px) {
+  .band { padding-block: 3.75rem; }
+  .hero { padding-block: 3.75rem 3rem; }
+  .head { margin-bottom: 2.25rem; }
+  .head p { font-size: 1.1rem; }
+  .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem 1rem; }
+  .names, .anatomy, .facts, .examples, .pair, .steps, .reels { grid-template-columns: minmax(0, 1fr); }
+  .reel { aspect-ratio: auto; min-height: 14rem; border-radius: 1.4rem; }
+  .explore { grid-template-columns: minmax(0, 1fr); grid-template-areas: "map" "chips" "panel"; }
+  .chips { flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start; padding-bottom: 0.4rem; }
+  .tile, .pair .tile { padding: 1.75rem; border-radius: 1.4rem; }
+  .names .lead { padding: 2rem 1.75rem; }
+  .names .lead p { font-size: 1.05rem; }
+  .days { --u: 0.15rem; }
+  .days.months { --u: 0.36rem; gap: 0.15rem; }
+  .months .day .pct { font-size: 0.72rem; }
+  .months .day .d { font-size: 0.6rem; }
+  .months .day .n { font-size: 0.56rem; }
+  .day .d { font-size: 0.74rem; }
+  .day .n { font-size: 0.68rem; }
+  .day .pct { font-size: 0.95rem; }
+  .close { padding: 3rem 1.5rem; border-radius: 1.4rem; }
+}
+
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; }
+img { max-width: 100%; }
+[hidden] { display: none !important; }
+.embeds { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; margin-bottom: 1.25rem; align-items: start; }
+.embed { display: flex; flex-direction: column; gap: 0.7rem; min-width: 0; margin: 0; }
+.embed .instagram-media { min-width: 0 !important; width: 100% !important; max-width: 100% !important; margin: 0 !important; border-radius: 1.25rem !important; }
+.embed blockquote.instagram-media { background: var(--inverse-bg); padding: 1.6rem; min-height: 12rem; display: grid; place-items: center; text-align: center; box-sizing: border-box; }
+.embed blockquote.instagram-media a { color: var(--inverse-text); font-weight: 600; }
+.embed figcaption { font-size: 0.875rem; color: var(--secondary); line-height: 1.4; }
+@media (max-width: 780px) { .embeds { grid-template-columns: minmax(0, 1fr); } }
+</style>
+</head>
+<body>
+<div class="nav"><div class="inner"><b>Emerging Looks</b><span>Look report · Indian womenswear · November 2026</span></div></div>
+
+<div class="hero"><div class="inner">
+  <div class="eyebrow">What Instagram Reels is showing young Indian women</div>
+  <h1>The kurti is becoming an everyday top.</h1>
+  <p class="sub">We recorded the Reels shown to a test account set to India and English. About one in six fashion videos featured a kurti, and creators are selling the newer versions under names of their own. We traced the newest name back to where it started.</p>
+  <div class="stats">
+    <div><b>47</b><span>Reels showing a kurti or kurta set</span></div>
+    <div><b>44</b><span>different creators</span></div>
+    <div><b>6</b><span>days recorded, 5 Oct to 5 Nov 2026</span></div>
+    <div><b>17%</b><span>of the 276 fashion Reels in the feed</span></div>
+  </div>
+</div></div>
+
+<div class="band grey"><div class="inner">
+  <div class="head">
+    <h2>Four names, written on screen by the creators.</h2>
+    <p>We found these by reading the text in every recording. No keyword search was involved.</p>
+  </div>
+  <div class="names">
+    <div class="tile lead">
+      <span class="meta">5 creators · 6 Oct to 5 Nov</span>
+      <h3>Y2K kurta sets and Y2K desi tops</h3>
+      <p>Fitted kurtis with bell or sheer sleeves, shown as sets or over jeans. <strong>It is the only label we still saw a month later</strong>, so we traced it beyond our feed.</p>
+    </div>
+    <div class="tile">
+      <span class="meta">11 Reels · 11 creators · 5 to 8 Oct</span>
+      <h3>Kurti with denim</h3>
+      <p>Kurtis worn over jeans or denim shorts. One Reel had 101,594 likes. It left our feed after 8 Oct, and the trace below suggests why.</p>
+    </div>
+    <div class="tile">
+      <span class="meta">3 creators · 5 to 8 Oct</span>
+      <h3>Short kurtis</h3>
+      <p>Hauls of hip-length kurtis, up to 13 in one Reel. One haul came from Meesho.</p>
+    </div>
+    <div class="tile">
+      <span class="meta">3 creators · 5 and 7 Oct</span>
+      <h3>Farshi salwar suits</h3>
+      <p>Kurtas over floor-length wide salwars. One creator restyled them for the office. The most-liked had 136,922 likes.</p>
+    </div>
+  </div>
+</div></div>
+
+<div class="band"><div class="inner">
+  <div class="head">
+    <h2>The newest name, traced back.</h2>
+    <p>After finding Y2K kurta sets in our feed, we looked the label up on Instagram. Its topic pages list 101 popular posts from 87 creators.</p>
+  </div>
+  <div class="tile">
+    <h3>When today's popular Y2K kurti posts were published</h3>
+    <div class="days months" role="img" aria-label="Popular posts under the Y2K kurti labels by month published, rising from 4 in July 2025 to 18 in July 2026.">
+      <div class="day"><span class="pct">4</span><span class="bar" style="--p:4"></span><span class="d">Jul</span><span class="n">2025</span></div>
+      <div class="day"><span class="pct">2</span><span class="bar" style="--p:2"></span><span class="d">Aug</span><span class="n">&nbsp;</span></div>
+      <div class="day"><span class="pct">2</span><span class="bar" style="--p:2"></span><span class="d">Sep</span><span class="n">&nbsp;</span></div>
+      <div class="day"><span class="pct">1</span><span class="bar" style="--p:1"></span><span class="d">Oct</span><span class="n">&nbsp;</span></div>
+      <div class="day"><span class="pct">6</span><span class="bar" style="--p:6"></span><span class="d">Nov</span><span class="n">&nbsp;</span></div>
+      <div class="day"><span class="pct">6</span><span class="bar" style="--p:6"></span><span class="d">Dec</span><span class="n">&nbsp;</span></div>
+      <div class="day"><span class="pct">7</span><span class="bar" style="--p:7"></span><span class="d">Jan</span><span class="n">2026</span></div>
+      <div class="day"><span class="pct">11</span><span class="bar" style="--p:11"></span><span class="d">Feb</span><span class="n">&nbsp;</span></div>
+      <div class="day"><span class="pct">11</span><span class="bar" style="--p:11"></span><span class="d">Mar</span><span class="n">&nbsp;</span></div>
+      <div class="day"><span class="pct">7</span><span class="bar" style="--p:7"></span><span class="d">Apr</span><span class="n">&nbsp;</span></div>
+      <div class="day"><span class="pct">11</span><span class="bar" style="--p:11"></span><span class="d">May</span><span class="n">&nbsp;</span></div>
+      <div class="day"><span class="pct">12</span><span class="bar" style="--p:12"></span><span class="d">Jun</span><span class="n">&nbsp;</span></div>
+      <div class="day"><span class="pct">18</span><span class="bar" style="--p:18"></span><span class="d">Jul</span><span class="n">&nbsp;</span></div>
+    </div>
+    <p class="small">Posts per month on Instagram's topic pages for Y2K kurta set, Y2K kurti and Y2K desi top, read on 14 Nov 2026. The pages list popular posts only and stop at July 2026, so this shows when the label took off, not how many posts exist. Three earlier posts, from May 2024 to April 2025, are not shown.</p>
+  </div>
+  <div class="facts">
+    <div class="tile"><b>55.9M</b><p>Plays across those 101 posts. Fifteen passed one million.</p></div>
+    <div class="tile"><b>4,600</b><p>Posts Instagram counts under Y2K kurti. Short kurti has 1.2 million. The Y2K label is still small.</p></div>
+    <div class="tile"><b>2025</b><p>It began with thrift and made-to-order sellers. Early captions say “all sold” and “DM to order”.</p></div>
+    <div class="tile"><b>19</b><p>Of the 101 posts name Meesho. By 2026 the look had moved into marketplace hauls.</p></div>
+    <div class="tile"><b>20×</b><p>One creator from our feed got 2.3 and 2.5 million plays on her Y2K kurta set hauls. Her recent Reels get about 118,000.</p></div>
+    <div class="tile"><b>18</b><p>Creators posted Reels under the label between 14 Oct and 13 Nov 2026. It is still in use.</p></div>
+  </div>
+  <p class="press">Instagram's topic page cites Indiatimes and The Express Tribune. Fashion titles have covered the wider style this year as chatpata dressing, including <a href="https://www.harpersbazaar.in/fashion/story/chatpata-dressing-is-gen-zs-boldest-take-on-indo-western-style-yet-1379090-2026-04-21" target="_blank" rel="noopener">Harper's Bazaar India</a> and <a href="https://elle.in/fashion/main-character-masala-edition-the-chatpata-fashion-manifesto-11157867" target="_blank" rel="noopener">Elle India</a>. Our feed surfaced it with no keywords.</p>
+  <div class="subhead">
+    <h3>Kurti with denim is far bigger, and seasonal.</h3>
+    <p>We traced the second label the same way. It is an established everyday look that peaks before summer.</p>
+  </div>
+  <div class="tile">
+    <h3>When today's popular kurti-with-jeans posts were published</h3>
+    <div class="days months ten" role="img" aria-label="Popular kurti with jeans posts by month published in 2026: none in January, 4 in February, 3 in March, 4 in April, 11 in May, 8 in June, 2 in July, 3 in August, 2 in September and 1 in October.">
+      <div class="day"><span class="pct">0</span><span class="bar" style="--p:0"></span><span class="d">Jan</span><span class="n">2026</span></div>
+      <div class="day"><span class="pct">4</span><span class="bar" style="--p:4"></span><span class="d">Feb</span><span class="n">&nbsp;</span></div>
+      <div class="day"><span class="pct">3</span><span class="bar" style="--p:3"></span><span class="d">Mar</span><span class="n">&nbsp;</span></div>
+      <div class="day"><span class="pct">4</span><span class="bar" style="--p:4"></span><span class="d">Apr</span><span class="n">&nbsp;</span></div>
+      <div class="day"><span class="pct">11</span><span class="bar" style="--p:11"></span><span class="d">May</span><span class="n">&nbsp;</span></div>
+      <div class="day"><span class="pct">8</span><span class="bar" style="--p:8"></span><span class="d">Jun</span><span class="n">&nbsp;</span></div>
+      <div class="day"><span class="pct">2</span><span class="bar" style="--p:2"></span><span class="d">Jul</span><span class="n">&nbsp;</span></div>
+      <div class="day"><span class="pct">3</span><span class="bar" style="--p:3"></span><span class="d">Aug</span><span class="n">&nbsp;</span></div>
+      <div class="day"><span class="pct">2</span><span class="bar" style="--p:2"></span><span class="d">Sep</span><span class="n">&nbsp;</span></div>
+      <div class="day"><span class="pct">1</span><span class="bar" style="--p:1"></span><span class="d">Oct</span><span class="n">&nbsp;</span></div>
+    </div>
+    <p class="small">Posts per month on Instagram's topic pages for kurti with jeans, short kurti with jeans and kurti jeans outfit, read on 14 Nov 2026: 52 posts from 45 creators. Fourteen earlier posts, from October 2024 to December 2025, are not shown.</p>
+  </div>
+  <div class="facts">
+    <div class="tile"><b>170,000</b><p>Posts Instagram counts under kurti with jeans. That is about 37 times the Y2K kurti label.</p></div>
+    <div class="tile"><b>103M</b><p>Plays across the 52 popular posts. 23 passed one million, and the largest reached 18 million.</p></div>
+    <div class="tile"><b>May, June</b><p>The months its popular posts cluster in. Ten captions mention summer and none mention winter.</p></div>
+  </div>
+  <p class="press">In our feed it appeared 11 times from 5 to 8 Oct and not once in the 51 fashion Reels recorded later. At the earlier rate we would expect two or three, so the gap could still be chance.</p>
+</div></div>
+
+<div class="band grey"><div class="inner">
+  <div class="head">
+    <h2>What the kurtis look like.</h2>
+    <p>The 47 Reels showed 167 outfits with a kurti, because most are montages. The counts below are outfits.</p>
+  </div>
+  <div class="anatomy">
+    <div class="tile">
+      <h3>Worn underneath</h3>
+      <div class="rows">
+        <div class="row"><span>Palazzo or wide-leg pants</span><span>52</span><span class="track"><span class="fill" style="width:100%"></span></span></div>
+        <div class="row"><span>Jeans</span><span>34</span><span class="track"><span class="fill" style="width:65%"></span></span></div>
+        <div class="row"><span>Flared pants</span><span>11</span><span class="track"><span class="fill" style="width:21%"></span></span></div>
+        <div class="row"><span>Skirt or shorts</span><span>11</span><span class="track"><span class="fill" style="width:21%"></span></span></div>
+        <div class="row"><span>Other pants</span><span>10</span><span class="track"><span class="fill" style="width:19%"></span></span></div>
+      </div>
+      <p class="small">118 outfits had a visible bottom. Jeans are under more than a quarter of them.</p>
+    </div>
+    <div class="tile">
+      <h3>Details</h3>
+      <div class="rows">
+        <div class="row"><span>Embroidery</span><span>39</span><span class="track"><span class="fill" style="width:100%"></span></span></div>
+        <div class="row"><span>Bell or flared sleeves</span><span>26</span><span class="track"><span class="fill" style="width:67%"></span></span></div>
+        <div class="row"><span>Side slits</span><span>19</span><span class="track"><span class="fill" style="width:49%"></span></span></div>
+        <div class="row"><span>Three-quarter sleeves</span><span>14</span><span class="track"><span class="fill" style="width:36%"></span></span></div>
+        <div class="row"><span>V-neck</span><span>10</span><span class="track"><span class="fill" style="width:26%"></span></span></div>
+        <div class="row"><span>Square neckline</span><span>9</span><span class="track"><span class="fill" style="width:23%"></span></span></div>
+      </div>
+    </div>
+    <div class="tile">
+      <h3>Cut and pattern</h3>
+      <div class="rows">
+        <div class="row"><span>Fitted</span><span>69</span><span class="track"><span class="fill" style="width:96%"></span></span></div>
+        <div class="row"><span>Relaxed</span><span>37</span><span class="track"><span class="fill" style="width:51%"></span></span></div>
+        <div class="row"><span>Straight</span><span>28</span><span class="track"><span class="fill" style="width:39%"></span></span></div>
+        <div class="row"><span>Solid colour</span><span>72</span><span class="track"><span class="fill" style="width:100%"></span></span></div>
+        <div class="row"><span>Floral</span><span>53</span><span class="track"><span class="fill" style="width:74%"></span></span></div>
+        <div class="row"><span>Geometric</span><span>14</span><span class="track"><span class="fill" style="width:19%"></span></span></div>
+      </div>
+    </div>
+    <div class="tile">
+      <h3>Colours</h3>
+      <div class="dots">
+        <div class="dot"><i style="background:#FFFFFF"></i><span>White<br><em>18</em></span></div>
+        <div class="dot"><i style="background:#F2A7C3"></i><span>Pink<br><em>16</em></span></div>
+        <div class="dot"><i style="background:#F1E6CE"></i><span>Cream<br><em>15</em></span></div>
+        <div class="dot"><i style="background:#1C1C22"></i><span>Black<br><em>15</em></span></div>
+        <div class="dot"><i style="background:#EFC64B"></i><span>Yellow<br><em>12</em></span></div>
+        <div class="dot"><i style="background:#7A1D39"></i><span>Maroon<br><em>11</em></span></div>
+        <div class="dot"><i style="background:#D23B3B"></i><span>Red<br><em>10</em></span></div>
+        <div class="dot"><i style="background:#A8C9EA"></i><span>Light blue<br><em>8</em></span></div>
+      </div>
+      <p class="small">Kurtis in each colour, out of 167. Swatches are indicative.</p>
+    </div>
+  </div>
+</div></div>
+
+<div class="band"><div class="inner">
+  <div class="head">
+    <h2>How often it showed up.</h2>
+    <p>The kurti held a steady share of the feed on four of the six days. A second test feed, built around romantic and vintage style, showed none in 110 fashion Reels.</p>
+  </div>
+  <div class="tile">
+    <h3>Share of fashion Reels showing a kurti</h3>
+    <div class="days" role="img" aria-label="Share of fashion Reels showing a kurti on each recording day: 44 percent on 5 October, 18 percent on 6 October, 17 percent on 7 October, 15 percent on 8 October, 4 percent on 15 October and 15 percent on 5 November.">
+      <div class="day"><span class="pct">44%</span><span class="bar" style="--p:44"></span><span class="d">5 Oct</span><span class="n">7 / 16</span></div>
+      <div class="day"><span class="pct">18%</span><span class="bar" style="--p:18"></span><span class="d">6 Oct</span><span class="n">7 / 38</span></div>
+      <div class="day"><span class="pct">17%</span><span class="bar" style="--p:17"></span><span class="d">7 Oct</span><span class="n">20 / 118</span></div>
+      <div class="day"><span class="pct">15%</span><span class="bar" style="--p:15"></span><span class="d">8 Oct</span><span class="n">8 / 53</span></div>
+      <div class="day"><span class="pct">4%</span><span class="bar" style="--p:4"></span><span class="d">15 Oct</span><span class="n">1 / 25</span></div>
+      <div class="day"><span class="pct">15%</span><span class="bar" style="--p:15"></span><span class="d">5 Nov</span><span class="n">4 / 26</span></div>
+    </div>
+    <p class="small">Under each day: Reels with a kurti / fashion Reels recorded. 5 Oct is a small sample. By 15 Oct the feed had drifted toward comedy skits, which also cut the number of fashion Reels.</p>
+  </div>
+  <div class="facts">
+    <div class="tile"><b>25 and 22</b><p>Sales posts and ordinary posts. 25 Reels promote products for a commission. 22 do not.</p></div>
+    <div class="tile"><b>27</b><p>Reels whose caption asks viewers to comment for a shopping link.</p></div>
+    <div class="tile"><b>₹280</b><p>The one price shown on screen. Four creators named Meesho as their source.</p></div>
+    <div class="tile"><b>46 of 47</b><p>Reels set to music with no speech. A transcript would tell you nothing about them.</p></div>
+    <div class="tile"><b>35,908</b><p>Median likes on the day we recorded each Reel, across the 35 with a readable count. Ten had over 100,000.</p></div>
+    <div class="tile"><b>33 of 44</b><p>Main creators who appeared to be 18 to 24. This is the model's judgement from the video, not a known fact about anyone.</p></div>
+  </div>
+</div></div>
+
+<div class="band grey"><div class="inner">
+  <div class="head">
+    <h2>See it for yourself.</h2>
+    <p>Three play right here. The other tiles open the Reel on Instagram. Plays are as counted on 14 Nov 2026.</p>
+  </div>
+  <div class="embeds">
+    <figure class="embed"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DfWX-bGxqsb/" data-instgrm-version="14"><a href="https://www.instagram.com/reel/DfWX-bGxqsb/" target="_blank" rel="noopener">Watch this Reel on Instagram ›</a></blockquote><figcaption>Seen in our feed. “Y2K Kurta Set Haul” by @tuniaa___, posted 5 Nov 2026, 126K plays.</figcaption></figure>
+    <figure class="embed"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DdyzXc_zQYU/" data-instgrm-version="14"><a href="https://www.instagram.com/reel/DdyzXc_zQYU/" target="_blank" rel="noopener">Watch this Reel on Instagram ›</a></blockquote><figcaption>Seen in our feed. “These y2k kurti sets” by @glow_with_richa, posted 27 Sep 2026.</figcaption></figure>
+    <figure class="embed"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DSknpcbDI54/" data-instgrm-version="14"><a href="https://www.instagram.com/reel/DSknpcbDI54/" target="_blank" rel="noopener">Watch this Reel on Instagram ›</a></blockquote><figcaption>The most-played Y2K kurta set post: a small label, @kri_clothing, 22 Dec 2025, 6.14M plays.</figcaption></figure>
+  </div>
+  <div class="reels">
+    <a class="reel" href="https://www.instagram.com/reel/DXlX5r5xqrs/" target="_blank" rel="noopener"><span class="top"><span>Same creator</span><span>26 Apr 2026</span></span><span class="mid"><span class="big">2.27M plays</span><span class="ttl">Her earlier Y2K kurta set haul</span><span class="note">About 20 times her recent average.</span></span><span class="bottom"><span class="who">@tuniaa___</span><span class="play" aria-hidden="true"><svg viewBox="0 0 10 10" width="11" height="11"><path d="M2 1 L9 5 L2 9 Z"/></svg></span></span></a>
+    <a class="reel" href="https://www.instagram.com/reel/Da-MRhNTUJq/" target="_blank" rel="noopener"><span class="top"><span>Creator in our feed</span><span>19 Jul 2026</span></span><span class="mid"><span class="big">3.25M plays</span><span class="ttl">A Y2K kurti from Meesho</span><span class="note">The most-played Reel on Instagram's Y2K kurti page.</span></span><span class="bottom"><span class="who">@palmuu_</span><span class="play" aria-hidden="true"><svg viewBox="0 0 10 10" width="11" height="11"><path d="M2 1 L9 5 L2 9 Z"/></svg></span></span></a>
+    <a class="reel" href="https://www.instagram.com/reel/DIoL6AQTThL/" target="_blank" rel="noopener"><span class="top"><span>Where it started</span><span>19 Apr 2025</span></span><span class="mid"><span class="big">706K plays</span><span class="ttl">An early drop that sold out</span><span class="note">A small seller's desi Y2K tops, marked “all sold”.</span></span><span class="bottom"><span class="who">@shashaa_yourdesidream</span><span class="play" aria-hidden="true"><svg viewBox="0 0 10 10" width="11" height="11"><path d="M2 1 L9 5 L2 9 Z"/></svg></span></span></a>
+    <a class="reel" href="https://www.instagram.com/reel/DMxXtuEpEIC/" target="_blank" rel="noopener"><span class="top"><span>Creator in our feed</span><span>31 Jul 2025</span></span><span class="mid"><span class="big">509K plays</span><span class="ttl">Y2K tops from Meesho</span><span class="note">An early marketplace haul.</span></span><span class="bottom"><span class="who">@jojoshru</span><span class="play" aria-hidden="true"><svg viewBox="0 0 10 10" width="11" height="11"><path d="M2 1 L9 5 L2 9 Z"/></svg></span></span></a>
+    <a class="reel" href="https://www.instagram.com/reel/DaXraOkSoII/" target="_blank" rel="noopener"><span class="top"><span>Creator in our feed</span><span>4 Jul 2026</span></span><span class="mid"><span class="big">4.14M plays</span><span class="ttl">A farshi salwar Reel</span><span class="note">Her recent Reels get about 56,000 plays.</span></span><span class="bottom"><span class="who">@sheisritika_</span><span class="play" aria-hidden="true"><svg viewBox="0 0 10 10" width="11" height="11"><path d="M2 1 L9 5 L2 9 Z"/></svg></span></span></a>
+    <a class="reel" href="https://www.instagram.com/reel/DfmSDiJBSio/" target="_blank" rel="noopener"><span class="top"><span>Still being posted</span><span>11 Nov 2026</span></span><span class="mid"><span class="big">4,138 comments</span><span class="ttl">“Y2k kurti from Meesho”</span><span class="note">In three days. Every comment we sampled asks for the link.</span></span><span class="bottom"><span class="who">@sadhanaaaasng</span><span class="play" aria-hidden="true"><svg viewBox="0 0 10 10" width="11" height="11"><path d="M2 1 L9 5 L2 9 Z"/></svg></span></span></a>
+  </div>
+</div></div>
+
+<div class="band"><div class="inner">
+  <div class="head">
+    <h2>What it means, and what it does not.</h2>
+  </div>
+  <div class="pair">
+    <div class="tile">
+      <h3>If you make womenswear</h3>
+      <ul>
+        <li><strong>Design</strong>A fitted, hip-length kurti cut to sit over jeans, with bell or sheer sleeves, side slits and a square or V neck. Solids and small florals lead.</li>
+        <li><strong>Range</strong>Offer it both ways: as a top for denim, and as a set with palazzo or flared pants. Both showed up.</li>
+        <li><strong>Timing</strong>Kurti-with-denim content peaks in May and June. Plan that range for late spring, and treat Y2K sets as the newer, smaller bet.</li>
+        <li><strong>Price</strong>Meesho finds at about ₹280 are setting the entry tier. Decide whether to compete there or sit clearly above it.</li>
+        <li><strong>Content</strong>The look travels as a fast montage set to music with a short label on screen. Almost none had speech.</li>
+      </ul>
+      <p class="small">This is our reading of the evidence, offered for discussion.</p>
+    </div>
+    <div class="tile">
+      <h3>The limits</h3>
+      <ul>
+        <li><strong>One test feed</strong>It shows what Instagram served this account. It does not measure what Indian women wear or buy.</li>
+        <li><strong>Two kinds of evidence</strong>Six days of feed recordings cannot show growth. The rise of the Y2K label comes from Instagram's list of popular posts, which is a selection and not a full count.</li>
+        <li><strong>More selling than wearing</strong>Over half the Reels are sales posts. The evidence is strongest on what is being pushed to this audience.</li>
+        <li><strong>Machine-read details</strong>An AI model watched each video and listed the garments. We spot-checked a sample by hand. It misses things, and it rarely records kurti length.</li>
+      </ul>
+    </div>
+  </div>
+</div></div>
+
+<div class="band grey"><div class="inner">
+  <div class="head">
+    <h2>One of 29 looks in the feed.</h2>
+    <p>Each dot is one fashion Reel, and Reels showing similar outfits sit close together. Pick a group to see what defines it.</p>
+  </div>
+  <div class="explore">
+    <div class="tile mapwrap">
+      <svg id="lookmap" viewBox="0 0 1000 1000" role="img" aria-label="Map of 386 fashion Reels. Similar outfits sit close together."></svg>
+      <p class="small">386 fashion Reels from both test feeds. 206 fall into 29 groups. The rest did not repeat across at least three creators. An AI model named and described each group from the Reels nearest its centre.</p>
+    </div>
+    <div class="tile panel" id="lookpanel" aria-live="polite"></div>
+    <div class="chips" id="lookchips"></div>
+  </div>
+</div></div>
+
+<div class="band"><div class="inner">
+  <div class="head">
+    <h2>How we found it.</h2>
+    <p>Keyword tools find a look once it has a name. We start from what the feed shows, so we pick up the look and the names creators are trying out for it.</p>
+  </div>
+  <div class="steps">
+    <div class="step"><i>1</i><h3>Watch the feed</h3><p>A phone scrolls Reels on a test account and records what it is shown. It never likes, follows or comments.</p></div>
+    <div class="step"><i>2</i><h3>Read every video</h3><p>An AI model watches each recording and lists the garments, colours, fits, details, on-screen text and format.</p></div>
+    <div class="step"><i>3</i><h3>Group what repeats</h3><p>Videos showing the same thing from different creators are grouped. A person reviews the group.</p></div>
+    <div class="step"><i>4</i><h3>Trace the name</h3><p>Once a look has a name, we look it up on Instagram to see when it started and how far it has spread.</p></div>
+  </div>
+</div></div>
+
+<div class="band" style="padding-top:0"><div class="inner">
+  <div class="close">
+    <h2>This one is womenswear. Yours can be any category on Reels.</h2>
+    <p>Denim, footwear, jewellery, beauty, home. The method is the same: a feed set up like your customer's, every video read, and a report like this with the examples, the counts and the limits.</p>
+    <p class="ask">Want one for your category? Reply to the person who sent you this page.</p>
+  </div>
+</div></div>
+
+<div class="foot"><div class="inner"><p>Emerging Looks is a working name. Sample report, 14 November 2026. Counts are sightings in test feeds, not market measurements.</p></div></div>
+
+<script>
+(function () {
+  var D = {"days":["2026-10-05","2026-10-06","2026-10-07","2026-10-08","2026-10-15","2026-11-02","2026-11-03","2026-11-05"],"groups":[{"name":"button-down shirt styling","n":74,"creators":55,"days":[2,16,28,12,4,2,7,3],"p1":61,"p2":13,"sales":26,"def":"A collection of casual outfit inspiration focusing primarily on styling oversized or relaxed button-down shirts and blouses paired with denim and trousers.","pieces":["oversized button-down shirt","striped button-down shirt","wide-leg denim jeans","relaxed trousers","fitted tank top"],"palette":[["white","#FFFFFF"],["blue","#3F6FC4"],["beige","#D9C4A5"],["black","#1C1C22"],["yellow","#EFC64B"]],"note":"A broad everyday group. Treat it as the baseline, not a look.","featured":false},{"name":"coquette vacation dresses","n":11,"creators":8,"days":[0,1,5,3,1,0,0,1],"p1":9,"p2":2,"sales":5,"def":"A feminine summer and vacation wardrobe centered around romantic, coquette-style dresses with details like puff sleeves, corset bodices, and floral prints.","pieces":["floral midi dress","corset dress","slip dress","puff sleeve dress","straw handbag"],"palette":[["white","#FFFFFF"],["cream","#F1E6CE"],["pink","#F2A7C3"],["yellow","#EFC64B"],["blue","#3F6FC4"]],"note":"","featured":false},{"name":"south asian ethnic wear","n":10,"creators":10,"days":[0,2,5,3,0,0,0,0],"p1":10,"p2":0,"sales":8,"def":"Traditional and contemporary South Asian ethnic outfits featuring curated sets of kurtas, palazzos, anarkalis, and salWAR suits with dupattas. These looks highlight festive, celebratory, and everyday ethnic styling.","pieces":["kurta sets","anarkali suits","salwar kameez","palazzo pants","dupattas","kurti"],"palette":[["yellow","#EFC64B"],["pink","#F2A7C3"],["blue","#3F6FC4"],["maroon","#7A1D39"],["cream","#F1E6CE"],["green","#4E9B5A"]],"note":"","featured":true},{"name":"coquette and minimal casual","n":10,"creators":9,"days":[0,0,0,6,2,2,0,0],"p1":5,"p2":5,"sales":1,"def":"A blend of aesthetic gen-z styles featuring soft knits, denim, and feminine coquette details mixed with minimalist everyday staples and athleisure pieces.","pieces":["knit cropped cardigans","wide-leg denim jeans","fitted long sleeve tops","pleated a-line skirts","leather shoulder bags"],"palette":[["black","#1C1C22"],["grey","#9A9AA3"],["cream","#F1E6CE"],["pink","#F2A7C3"],["white","#FFFFFF"]],"note":"","featured":false},{"name":"y2k eclectic street style","n":8,"creators":8,"days":[1,2,3,0,0,0,1,1],"p1":7,"p2":1,"sales":0,"def":"A vibrant mix of casual everyday wear, party outfits, and festive looks featuring bold textures like faux fur and animal print, styled with a modern creator aesthetic.","pieces":["animal print faux fur coat","satin corset top","embroidered saree or kurta set","denim straight-leg jeans","party slip dress"],"palette":[["black","#1C1C22"],["brown","#6B4A34"],["red","#D23B3B"],["white","#FFFFFF"],["gold","#CBA24A"]],"note":"","featured":false},{"name":"indo western kurti styling","n":8,"creators":8,"days":[3,0,5,0,0,0,0,0],"p1":8,"p2":0,"sales":5,"def":"A fusion trend pairing traditional South Asian kurtis with contemporary western staples like denim jeans, shorts, and skirts.","pieces":["printed kurtis","embroidered kurtis","blue denim wide-leg jeans","denim shorts","palazzo pants"],"palette":[["white","#FFFFFF"],["pink","#F2A7C3"],["black","#1C1C22"],["blue","#3F6FC4"],["cream","#F1E6CE"]],"note":"","featured":true},{"name":"coquette aesthetic pastel","n":7,"creators":6,"days":[0,0,1,6,0,0,0,0],"p1":1,"p2":6,"sales":1,"def":"A hyper-feminine aesthetic characterized by pastel pinks and creams, floral prints, delicate lace, ruffles, bows, and corset-style silhouettes. It heavily draws inspiration from coquette and balletcore subcultures.","pieces":["floral corset tops","tiered or flared skirts with lace trim","knit cardigans with bows","wool coats with fur collars and cuffs","off-the-shoulder dresses"],"palette":[["pastel pink","#F6C6D6"],["cream","#F1E6CE"],["white","#FFFFFF"],["purple","#7B4FA3"]],"note":"","featured":false},{"name":"brandy melville aesthetic haul","n":5,"creators":5,"days":[0,0,2,1,1,1,0,0],"p1":3,"p2":2,"sales":3,"def":"A youth-oriented retail and bedroom showcase focused on casual everyday fashion and shopping hauls. It features trendy, accessible clothing typical of teen aesthetic retail environments.","pieces":["casual tees","basic tops","loungewear","simple dresses"],"palette":[["neutral","#D9D2C5"],["pastel","#EBD9E6"],["white","#FFFFFF"]],"note":"","featured":false},{"name":"autumn jacket and boots","n":5,"creators":5,"days":[0,0,0,3,1,0,1,0],"p1":1,"p2":4,"sales":0,"def":"A fall-inspired street style trend centered around pairing oversized jackets or blazers with mini shorts or skirts and knee-high boots. Outfits feature seasonal earth tones and rich textures ideal for outdoor autumn scenery.","pieces":["oversized leather or denim jacket","knee-high leather boots","mini shorts","denim mini skirt"],"palette":[["brown","#6B4A34"],["olive green","#77803B"],["blue","#3F6FC4"],["maroon","#7A1D39"],["grey","#9A9AA3"]],"note":"","featured":false},{"name":"fitted casual basics","n":5,"creators":4,"days":[1,0,0,0,0,2,2,0],"p1":1,"p2":4,"sales":1,"def":"A collection of everyday casual and loungewear looks centered around versatile fitted tops, ribbed tanks, and neutral basics. Creators showcase these items through talking-head styling videos and outfit inspirations.","pieces":["black ribbed fitted tank top","beige fitted top","black mock neck cutout top","black knit long sleeve top","grey striped relaxed sweater","blue satin robe"],"palette":[["black","#1C1C22"],["beige","#D9C4A5"],["grey","#9A9AA3"],["blue","#3F6FC4"],["cream","#F1E6CE"],["white","#FFFFFF"]],"note":"","featured":false},{"name":"autumn pumpkin patch style","n":5,"creators":4,"days":[0,0,0,4,0,1,0,0],"p1":0,"p2":5,"sales":0,"def":"Cozy seasonal autumn outfits specifically styled for visiting pumpkin patches, blending knitwear, boots, and casual fall layering. It captures an aesthetic seasonal lifestyle look popular for content creation.","pieces":["knit cardigan","knee-high boots","relaxed sweater","wide-leg trousers","pleated or lace skirt"],"palette":[["cream","#F1E6CE"],["pink","#F2A7C3"],["brown","#6B4A34"],["white","#FFFFFF"],["beige","#D9C4A5"]],"note":"","featured":false},{"name":"quirky playful knitwear","n":4,"creators":3,"days":[0,0,2,1,1,0,0,0],"p1":4,"p2":0,"sales":1,"def":"A vibrant and eclectic mix of whimsical knits, colorful stripes, playful appliques, and textured layering. It blends casual comfort with quirky, youthful statement pieces.","pieces":["striped knit sweaters","embroidered wide-leg pants","open-weave knit tops","cardigans with patches"],"palette":[["red","#D23B3B"],["blue","#3F6FC4"],["pink","#F2A7C3"],["brown","#6B4A34"],["white","#FFFFFF"]],"note":"The model flagged this group as loosely related.","featured":false},{"name":"y2k coquette fall styling","n":4,"creators":4,"days":[0,0,1,3,0,0,0,0],"p1":1,"p2":3,"sales":0,"def":"A playful fusion of Y2K nostalgia and coquette aesthetics featuring pleated mini skirts, knit cardigans, and knee-high boots suited for autumn transitions.","pieces":["pleated mini skirts","cropped knit cardigans","suede knee-high boots","fitted tie-front tops","hair bows and caps"],"palette":[["brown","#6B4A34"],["beige","#D9C4A5"],["cream","#F1E6CE"],["pink","#F2A7C3"],["blue","#3F6FC4"]],"note":"","featured":false},{"name":"chic urban minimalist","n":4,"creators":4,"days":[0,0,1,2,0,1,0,0],"p1":1,"p2":3,"sales":0,"def":"A refined everyday look centered on sleek leather jackets or classic trenches paired with neutral fitted tops and dark trousers or skirts. The aesthetic leans into effortless European street style with a sophisticated edge.","pieces":["black leather cropped jacket","beige oversized trench coat","brown leather fitted jacket","burgundy turtleneck","black sunglasses"],"palette":[["black","#1C1C22"],["brown","#6B4A34"],["beige","#D9C4A5"],["burgundy","#6E1B2E"],["white","#FFFFFF"]],"note":"","featured":false},{"name":"cafe aesthetic outfit transition","n":4,"creators":4,"days":[0,0,0,3,1,0,0,0],"p1":1,"p2":3,"sales":0,"def":"A lifestyle and fashion content style featuring outfit showcases or transitions set against a sunlit cafe table laden with iced drinks, pastries, and accessories.","pieces":["fitted cami top","cropped cardigan","satin relaxed shirt","gold jewelry"],"palette":[["white","#FFFFFF"],["pink","#F2A7C3"],["black","#1C1C22"],["gold","#CBA24A"]],"note":"","featured":false},{"name":"y2k denim and basics","n":3,"creators":3,"days":[0,0,1,2,0,0,0,0],"p1":3,"p2":0,"sales":1,"def":"A casual everyday aesthetic centered around fitted basic tops paired with various cuts of blue denim jeans. The look embraces minimalist y2k styling with simple accessories and sneakers.","pieces":["fitted white or cream top","blue denim jeans","white sneakers","shoulder bag"],"palette":[["white","#FFFFFF"],["blue","#3F6FC4"],["cream","#F1E6CE"],["black","#1C1C22"],["pink","#F2A7C3"]],"note":"","featured":false},{"name":"ethnic kurta sets","n":3,"creators":3,"days":[0,1,1,1,0,0,0,0],"p1":3,"p2":0,"sales":1,"def":"A collection centered around traditional Indian ethnic wear, specifically featuring straight-cut or relaxed kurtas paired with wide-leg palazzo pants. The style emphasizes vibrant festive colors, comfortable fabrics, and everyday ethnic styling.","pieces":["straight-cut kurta","relaxed kurta","wide-leg palazzo pants","shoulder bag","silver earrings"],"palette":[["blue","#3F6FC4"],["red","#D23B3B"],["pink","#F2A7C3"],["white","#FFFFFF"],["cream","#F1E6CE"],["orange","#EE8A3C"]],"note":"The model flagged this group as loosely related.","featured":true},{"name":"wide leg trouser styling","n":3,"creators":3,"days":[0,0,1,2,0,0,0,0],"p1":2,"p2":1,"sales":1,"def":"A minimalist casual aesthetic centered around high-waisted, wide-leg trousers paired with fitted tops. The look emphasizes clean lines and effortless everyday styling.","pieces":["wide-leg trousers","fitted top","black sandals","structured shoulder bag"],"palette":[["black","#1C1C22"],["brown","#6B4A34"],["blue","#3F6FC4"],["maroon","#7A1D39"]],"note":"","featured":false},{"name":"y2k coquette denim","n":3,"creators":3,"days":[0,0,1,0,0,1,0,1],"p1":2,"p2":1,"sales":0,"def":"A blend of early 2000s aesthetics and romantic coquette details featuring casual denim paired with delicate knit tops, lace trim, and feminine accents. Designers can recognize it by the juxtaposition of rugged blue jeans with dainty, textured white tops and silver jewelry.","pieces":["white knit lace-trim top","blue denim jeans","silver pendant necklace"],"palette":[["white","#FFFFFF"],["light blue","#A8C9EA"],["silver","#C4C6CC"]],"note":"","featured":false},{"name":"minimalist casual basics","n":3,"creators":3,"days":[0,0,0,0,1,0,0,2],"p1":3,"p2":0,"sales":0,"def":"A clean, everyday aesthetic featuring fitted basic tops paired with relaxed or wide-leg bottoms. The focus is on effortless styling with neutral tones and minimal accessories.","pieces":["ribbed fitted top","wide-leg trousers","relaxed sweatpants","strapless fitted top"],"palette":[["white","#FFFFFF"],["black","#1C1C22"],["navy","#1F2B55"],["grey","#9A9AA3"]],"note":"","featured":false},{"name":"corset top and trousers","n":3,"creators":3,"days":[0,1,1,0,0,0,0,1],"p1":3,"p2":0,"sales":1,"def":"A chic everyday and date-night look centered around fitted corset tops paired with sleek trousers or straight-leg pants. It features feminine details like off-the-shoulder necklines, ruffles, and minimal gold jewelry.","pieces":["fitted corset top","black straight-leg pants","black high-waisted trousers","gold jewelry"],"palette":[["white","#FFFFFF"],["cream","#F1E6CE"],["yellow","#EFC64B"],["black","#1C1C22"],["gold","#CBA24A"]],"note":"","featured":false},{"name":"brown knit and denim","n":3,"creators":3,"days":[0,0,1,0,0,0,0,2],"p1":3,"p2":0,"sales":2,"def":"A minimalist casual look centered around pairing a brown knit top or sweater with blue denim wide-leg jeans. It emphasizes clean everyday styling with basic wardrobe staples.","pieces":["brown knit sweater","blue denim wide-leg jeans","brown knit fitted top"],"palette":[["brown","#6B4A34"],["blue","#3F6FC4"],["black","#1C1C22"],["grey","#9A9AA3"]],"note":"","featured":false},{"name":"versatile weekly outfit styling","n":3,"creators":3,"days":[0,1,1,0,1,0,0,0],"p1":3,"p2":0,"sales":1,"def":"A collection of quick-change montage videos showcasing diverse daily outfit inspirations ranging from casual streetwear to ethnic festive looks.","pieces":["fitted tops","wide-leg trousers","kurta sets","statement bags","belts with gold buckles"],"palette":[["white","#FFFFFF"],["black","#1C1C22"],["grey","#9A9AA3"],["maroon","#7A1D39"],["cream","#F1E6CE"]],"note":"","featured":false},{"name":"knit polos and striped shirts","n":3,"creators":3,"days":[1,0,2,0,0,0,0,0],"p1":3,"p2":0,"sales":1,"def":"A collection of casual everyday looks featuring knit polo shirts, ribbed pullovers, and striped button-ups paired with fitted bottoms.","pieces":["striped knit oversized polo shirt","ribbed knit fitted pullover","striped fitted button-up shirt","black fitted shorts","black fitted skirt","black denim jeans"],"palette":[["brown","#6B4A34"],["black","#1C1C22"],["light blue","#A8C9EA"],["maroon","#7A1D39"],["red","#D23B3B"]],"note":"","featured":false},{"name":"cozy fall denim","n":3,"creators":3,"days":[0,0,1,1,0,1,0,0],"p1":1,"p2":2,"sales":0,"def":"A casual autumn-ready aesthetic pairing brown outerwear and fitted ribbed tops with blue denim bottoms. The look leans into warm tones and comfortable everyday styling.","pieces":["brown jacket","ribbed fitted top","blue denim jeans"],"palette":[["brown","#6B4A34"],["blue","#3F6FC4"],["white","#FFFFFF"],["black","#1C1C22"]],"note":"","featured":false},{"name":"pashmina shawl styling","n":3,"creators":3,"days":[0,1,2,0,0,0,0,0],"p1":3,"p2":0,"sales":0,"def":"A collection of casual everyday looks centered around the versatile styling of traditional paisley pashmina and knit scarves paired with denim, sweaters, and jackets.","pieces":["paisley pashmina shawl","fringed knit scarf","blue denim wide-leg jeans","leather jacket","ribbed fitted top"],"palette":[["burgundy","#6E1B2E"],["teal","#2F8C8C"],["black","#1C1C22"],["blue","#3F6FC4"],["brown","#6B4A34"],["cream","#F1E6CE"]],"note":"","featured":false},{"name":"knitwear and denim basics","n":3,"creators":3,"days":[1,0,1,0,0,0,1,0],"p1":2,"p2":1,"sales":2,"def":"A minimalist everyday casual aesthetic pairing cozy knit sweaters with relaxed wide-leg denim jeans. The look focuses on comfortable textures and easy styling suitable for college or casual outings.","pieces":["oversized knit sweater","fitted knit long-sleeve top","wide-leg denim jeans","leather shoulder bag"],"palette":[["grey","#9A9AA3"],["light blue","#A8C9EA"],["cream","#F1E6CE"],["white","#FFFFFF"],["brown","#6B4A34"]],"note":"","featured":false},{"name":"minimalist midi skirt pairing","n":3,"creators":3,"days":[0,0,0,1,1,0,1,0],"p1":1,"p2":2,"sales":1,"def":"A sophisticated urban street style look centered around a fitted black long-sleeve top and a neutral midi-length skirt. Accessorized with minimal black footwear and a coordinated shoulder bag for an effortless old money aesthetic.","pieces":["black fitted long-sleeve top","neutral midi skirt","black sunglasses","leather handbag"],"palette":[["black","#1C1C22"],["white","#FFFFFF"],["beige","#D9C4A5"],["cream","#F1E6CE"]],"note":"","featured":false},{"name":"parisian travel style","n":3,"creators":3,"days":[0,0,0,3,0,0,0,0],"p1":0,"p2":3,"sales":0,"def":"A chic lifestyle and travel aesthetic featuring curated outfits worn against iconic Parisian backdrops like the Eiffel Tower. It blends relaxed knits, tailored denim, and sophisticated dresses captured with cinematic flair.","pieces":["knit sweater","cardigan","straight-leg jeans","wide-leg trousers","black dress","leather bag"],"palette":[["cream","#F1E6CE"],["pink","#F2A7C3"],["red","#D23B3B"],["blue","#3F6FC4"],["grey","#9A9AA3"],["white","#FFFFFF"]],"note":"","featured":false}],"points":[[491,719,0,0],[261,354,1,0],[288,124,2,0],[486,729,0,0],[1000,449,-1,0],[296,156,2,0],[445,678,0,0],[244,544,3,0],[370,168,2,0],[480,872,-1,0],[338,34,-1,0],[626,466,15,0],[426,492,0,0],[202,101,-1,0],[180,697,-1,0],[538,464,0,0],[178,532,-1,0],[599,194,-1,0],[310,355,-1,0],[784,442,-1,0],[656,587,3,0],[862,789,-1,0],[607,818,-1,0],[475,539,0,0],[582,186,-1,0],[723,626,3,0],[712,711,-1,0],[113,551,-1,0],[498,773,-1,0],[469,134,-1,0],[344,265,-1,0],[781,777,-1,0],[235,176,-1,0],[81,333,-1,0],[342,92,-1,0],[576,504,0,0],[905,637,-1,0],[44,410,-1,0],[496,740,0,0],[28,320,-1,0],[47,381,-1,0],[700,415,15,0],[110,459,-1,0],[212,695,-1,0],[566,61,-1,0],[68,336,-1,0],[627,741,-1,0],[428,91,16,0],[7,334,-1,0],[771,272,17,0],[271,874,-1,0],[612,647,11,0],[880,451,-1,0],[712,464,18,0],[914,551,-1,0],[0,305,-1,0],[184,454,-1,0],[324,232,4,0],[350,858,-1,0],[470,728,0,0],[318,24,-1,0],[793,372,19,0],[475,639,0,0],[529,816,-1,0],[367,30,-1,0],[287,333,1,0],[460,473,0,0],[833,426,-1,0],[791,689,20,0],[91,324,-1,0],[402,83,-1,0],[791,358,19,0],[589,363,21,0],[119,244,-1,0],[756,410,-1,0],[551,642,-1,0],[611,386,-1,0],[401,26,-1,0],[600,364,21,0],[443,230,5,0],[430,503,0,0],[329,163,2,0],[550,493,0,0],[524,819,-1,0],[582,84,-1,0],[392,173,2,0],[493,672,0,0],[543,516,0,0],[704,756,-1,0],[429,112,16,0],[374,245,4,0],[746,255,-1,0],[178,248,-1,0],[434,397,22,0],[408,517,0,0],[499,421,1,0],[421,448,0,0],[515,188,-1,0],[269,55,-1,0],[509,579,11,0],[436,638,0,0],[448,679,0,0],[210,184,-1,0],[811,294,-1,0],[416,543,-1,0],[368,127,-1,0],[366,558,0,0],[855,610,6,0],[903,341,23,0],[670,344,-1,0],[442,255,5,0],[222,55,-1,0],[738,460,18,0],[307,375,-1,0],[955,529,7,0],[466,538,0,0],[358,66,-1,0],[230,349,1,0],[661,596,3,1],[362,767,-1,1],[967,670,-1,1],[815,759,-1,1],[492,541,0,1],[320,302,1,1],[562,710,12,1],[658,603,3,1],[195,58,-1,1],[564,681,12,1],[370,190,2,0],[578,401,24,0],[782,283,17,0],[420,443,0,0],[352,485,4,0],[295,4,-1,0],[442,255,5,0],[204,354,1,0],[399,23,-1,0],[462,469,0,0],[475,504,0,0],[28,444,-1,0],[262,754,13,0],[84,452,-1,0],[200,386,-1,0],[147,207,-1,0],[202,150,-1,0],[378,446,-1,0],[776,751,-1,0],[406,745,25,0],[246,692,-1,0],[243,16,-1,0],[579,468,0,0],[20,446,-1,0],[115,316,-1,0],[563,56,-1,0],[472,774,-1,0],[299,157,2,0],[45,444,-1,0],[842,542,-1,0],[717,404,15,0],[184,469,-1,0],[249,41,-1,0],[99,263,-1,0],[614,340,21,0],[47,351,-1,0],[604,319,26,0],[622,523,-1,0],[47,479,-1,0],[519,712,12,0],[411,159,-1,0],[118,244,-1,0],[672,336,-1,0],[11,316,-1,0],[196,108,-1,0],[551,882,-1,0],[455,647,0,0],[936,501,7,0],[726,615,3,0],[283,326,1,0],[269,976,14,0],[691,832,-1,0],[383,860,8,0],[168,818,-1,0],[309,655,0,0],[695,791,-1,0],[370,575,22,0],[459,699,0,0],[656,423,-1,0],[347,205,-1,0],[347,675,0,0],[745,645,-1,0],[612,646,11,0],[778,484,-1,0],[169,752,27,0],[651,540,3,0],[831,485,-1,0],[222,456,-1,0],[458,596,-1,0],[808,384,19,0],[344,539,0,0],[450,210,5,0],[292,549,4,0],[268,603,0,0],[529,577,0,0],[338,724,0,0],[879,325,23,0],[441,577,0,0],[397,0,-1,0],[537,455,0,0],[778,686,20,0],[339,651,0,0],[551,515,0,0],[345,743,-1,0],[293,217,-1,0],[396,720,25,0],[525,610,0,0],[376,305,-1,0],[339,132,2,0],[928,521,7,0],[247,641,0,0],[271,514,-1,0],[1000,450,-1,0],[441,296,-1,0],[389,654,0,0],[188,181,-1,0],[239,354,1,0],[321,677,0,0],[257,383,1,0],[544,496,0,0],[433,174,5,0],[423,590,0,0],[274,460,-1,0],[550,586,11,0],[323,444,-1,1],[589,570,0,1],[245,746,13,1],[799,501,9,1],[348,806,-1,1],[575,547,0,1],[978,536,-1,1],[381,529,3,1],[832,526,9,1],[695,307,-1,1],[60,639,10,1],[933,534,7,1],[742,458,18,1],[719,599,3,1],[286,386,-1,1],[274,817,24,1],[875,660,6,1],[958,537,7,1],[297,1000,14,1],[71,647,10,1],[308,712,-1,1],[197,770,-1,1],[402,840,8,1],[218,757,13,1],[35,595,-1,1],[209,323,-1,1],[328,692,0,1],[388,848,8,1],[93,674,10,1],[152,745,27,1],[77,653,10,1],[353,355,-1,1],[383,607,-1,1],[562,763,-1,1],[203,638,-1,1],[682,196,-1,1],[517,751,0,1],[273,820,24,1],[165,660,-1,1],[184,589,28,1],[921,700,-1,1],[202,606,28,1],[438,860,-1,1],[290,655,0,1],[327,510,4,1],[791,521,9,1],[741,404,-1,1],[553,899,-1,1],[224,568,0,1],[133,663,-1,1],[808,495,9,1],[77,830,-1,1],[708,712,-1,1],[231,605,0,1],[260,576,0,1],[380,938,-1,1],[703,558,-1,1],[157,738,27,1],[561,316,26,1],[282,685,-1,1],[591,605,0,1],[226,218,-1,1],[672,462,-1,1],[225,603,0,1],[39,589,-1,1],[853,706,-1,1],[385,818,8,1],[598,829,-1,1],[592,599,0,1],[768,221,-1,1],[310,752,-1,1],[243,281,-1,1],[840,836,-1,1],[326,818,-1,1],[438,70,-1,0],[67,831,-1,0],[568,487,0,0],[692,227,16,0],[680,504,-1,0],[261,14,-1,0],[458,501,0,0],[364,496,4,0],[488,173,-1,0],[186,894,0,0],[360,685,0,0],[318,190,2,0],[625,554,0,0],[396,716,25,0],[444,192,5,0],[320,560,4,0],[418,50,-1,0],[459,154,5,0],[520,506,0,0],[281,99,-1,0],[897,333,23,0],[249,112,-1,0],[377,123,-1,0],[759,592,9,0],[491,253,-1,0],[669,651,0,0],[603,310,26,0],[469,212,5,0],[272,433,-1,0],[718,373,-1,0],[309,633,0,0],[640,692,-1,0],[340,144,2,0],[271,626,0,0],[281,303,-1,0],[692,829,-1,0],[826,686,20,0],[540,566,0,0],[564,516,0,0],[238,103,-1,0],[324,609,0,0],[428,377,22,0],[311,479,4,0],[433,283,0,0],[680,431,-1,0],[388,652,0,0],[285,585,0,0],[367,221,-1,0],[637,422,-1,0],[186,894,0,0],[326,599,0,0],[227,365,1,0],[627,738,-1,0],[338,615,0,0],[681,563,3,1],[856,639,6,1],[833,646,-1,1],[882,655,6,1],[685,317,-1,1],[893,671,6,1],[294,998,14,1],[791,303,17,1],[294,613,0,1],[212,736,13,1],[245,400,1,1],[855,613,6,1],[268,849,-1,1],[943,653,-1,1],[169,606,28,1],[392,874,8,1],[79,569,-1,1],[922,611,-1,1],[880,464,-1,1],[867,787,-1,1],[790,591,-1,1],[266,974,14,1],[910,684,6,1],[380,944,-1,1],[64,676,10,1],[544,737,12,1]]};
+  var svg = document.getElementById("lookmap"), panel = document.getElementById("lookpanel"), chips = document.getElementById("lookchips");
+  if (!svg || !panel || !chips) return;
+  var NS = "http://www.w3.org/2000/svg", MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  function day(d) { var p = d.split("-"); return (+p[2]) + " " + MON[+p[1] - 1]; }
+  function cap(t) { return t.charAt(0).toUpperCase() + t.slice(1); }
+  function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+  var dots = D.points.map(function (p) {
+    var c = document.createElementNS(NS, "circle");
+    c.setAttribute("cx", 40 + p[0] * 0.92); c.setAttribute("cy", 40 + p[1] * 0.92); c.setAttribute("data-g", p[2]);
+    svg.appendChild(c); return c;
+  });
+  var btns = D.groups.map(function (g, i) {
+    var b = el("button", "chip"); b.type = "button"; b.id = "lookchip-" + i;
+    b.appendChild(document.createTextNode(cap(g.name) + " ")); b.appendChild(el("span", "", String(g.n)));
+    b.addEventListener("click", function () { select(i); }); chips.appendChild(b); return b;
+  });
+  function block(label, node) { var w = el("div"); w.appendChild(el("div", "lbl", label)); w.appendChild(node); return w; }
+  function select(i) {
+    var g = D.groups[i];
+    dots.forEach(function (c) {
+      var k = +c.getAttribute("data-g"), on = k === i;
+      c.setAttribute("class", on ? "on" : (k >= 0 ? "in" : "out")); c.setAttribute("r", on ? 13 : (k >= 0 ? 8 : 6));
+      if (on) svg.appendChild(c);
+    });
+    btns.forEach(function (b, k) { b.setAttribute("aria-pressed", k === i ? "true" : "false"); });
+    panel.textContent = "";
+    panel.appendChild(el("span", "meta", g.n + " Reels · " + g.creators + " creators"));
+    panel.appendChild(el("h3", "", cap(g.name)));
+    if (g.featured) panel.appendChild(el("span", "flag", "Part of the kurti story above"));
+    panel.appendChild(el("p", "", g.def));
+    if (g.note) panel.appendChild(el("p", "small", g.note));
+    if (g.pieces.length) { var ps = el("div", "pills"); g.pieces.forEach(function (t) { ps.appendChild(el("span", "", t)); }); panel.appendChild(block("Key pieces", ps)); }
+    if (g.palette.length) {
+      var sw = el("div", "sw");
+      g.palette.forEach(function (c) { var s = el("span"), d = el("i"); d.style.background = c[1]; s.appendChild(d); s.appendChild(document.createTextNode(cap(c[0]))); sw.appendChild(s); });
+      panel.appendChild(block("Colours", sw));
+    }
+    var strip = el("div", "strip"), max = Math.max.apply(null, g.days.concat([1]));
+    g.days.forEach(function (n, k) {
+      var col = el("div"), bar = el("b", n ? "" : "zero");
+      bar.style.height = (n ? Math.max(4, Math.round(44 * n / max)) : 2) + "px";
+      col.appendChild(el("span", "", String(n))); col.appendChild(bar); col.appendChild(el("span", "", day(D.days[k]))); strip.appendChild(col);
+    });
+    panel.appendChild(block("Reels on each recording day", strip));
+    panel.appendChild(el("p", "small", "General women's feed " + g.p1 + ", romantic and vintage feed " + g.p2 + ". Sales posts " + g.sales + " of " + g.n + "."));
+  }
+  svg.addEventListener("click", function (e) {
+    var t = e.target; if (t && t.tagName && t.tagName.toLowerCase() === "circle") { var k = +t.getAttribute("data-g"); if (k >= 0) select(k); }
+  });
+  select(5);
+})();
+</script>
+<script async src="https://www.instagram.com/embed.js"></script>
+</body>
+</html>
